@@ -40,7 +40,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // Local frontend (Vite)
-      "https://realestate-frontend.onrender.com", // Render-deployed frontend
+      "https://realestate-company.onrender.com", // Render-deployed frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // Allow cookies/auth headers if needed
@@ -65,3 +65,4 @@ app.get("/", (req, res) => {
 // ✅ Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
