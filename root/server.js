@@ -39,7 +39,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // Local frontend (Vite)
+      "http://localhost:8080", // Local frontend (Vite)
       "https://realestate-company.onrender.com", // Render-deployed frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
@@ -65,4 +65,5 @@ app.get("/", (req, res) => {
 // ✅ Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
 
